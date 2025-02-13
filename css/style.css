@@ -1,0 +1,13 @@
+.buttons i{
+    cursor: pointer;
+}
+.buttons i:nth-child(2){
+    font-size: 45px;
+    color: red;
+}
+
+h2{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

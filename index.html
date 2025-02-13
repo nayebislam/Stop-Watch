@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,400;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-nayeb: #0d0d0d;
+        }
+        @theme {
+          --color-light: #1a1a1a;
+        }
+        @theme {
+          --font-display: "Courier Prime", serif; 
+        }
+      </style>
+</head>
+
+<body class="h-screen flex justify-center items-center box-border bg-nayeb">
+    <div class="stopwatch max-[600px]: items-center text-white px-12 py-5 rounded-lg bg-light shadow-lg">
+        <h2 id="displayTime" class="font-display font-light text-6xl">00:00:00</h2>
+        <div class="buttons flex justify-center items-center gap-8 mt-2 text-4xl">
+            <i id="stop" class="fa-regular fa-circle-stop"></i>
+            <i id="start" class="fa-regular fa-circle-play"></i>
+            <i id="reset" class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
